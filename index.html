@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Demo / Smart3D jQuery Plugin v 0.3.3</title>
+  <!-- Including jQuery -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- Including ulslide jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smart3d.js"></script>
+
+  <style type="text/css">
+  .demo{
+    width: 720px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #444444;
+  }
+
+  .demo li {
+    width: 844px;
+    height: 300px;
+  }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#smartdemo1').smart3d();
+      $('#smartdemo2').smart3d({
+        invertHorizontal: true,
+        invertVertical: true
+      });
+
+      $('#smartdemo3').smart3d({
+        last_is_static: true
+      });
+    });
+  </script>
+</head>
+<body>
+<h1>カーソルを合わせると画像が動くDemo</h1>
+<div class="move_area">
+  <p>カーソルに追従して画像が動きます。</p>
+  <ul id="smartdemo1" class="demo">
+    <li><img src="images/1.png" /></li>
+    <li><img src="images/2.png" /></li>
+  </ul>
+</div>
+<div class="move_area">
+  <p>カーソルの逆方向に画像が動きます。</p>
+  <ul id="smartdemo2" class="demo">
+    <li><img src="images/1.png" /></li>
+    <li><img src="images/2.png" /></li>
+  </ul>
+</div>
+<div class="move_area">
+  <p>1枚の画像は固定され、もう一枚の画像がカーソルに追従して動きます。</p>
+  <ul id="smartdemo3" class="demo">
+    <li><img src="images/1.png" /></li>
+    <li><img src="images/2.png" /></li>
+  </ul>
+</div>
+</body>
+</html>
