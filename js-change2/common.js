@@ -15,3 +15,8 @@ function countUp(){
     //カウンタの値を HTML 内の counter に表示
     document.getElementById("counter").innerHTML=countUpValue;
 }
+
+//更新ボタン設定
+function Button(){
+  location.reload();
+}
