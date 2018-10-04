@@ -31,7 +31,9 @@
 
 .reload {
   width: 300px;
-  padding: 20px;
+  padding: 10px 20px;
+  color: #000;
+  margin-top: 20px;
 }
 
 
